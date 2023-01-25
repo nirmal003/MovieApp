@@ -5,8 +5,6 @@ import { Link } from "react-router-dom";
 import "./Navbar.css";
 import SidebarData from "./SidebarData";
 
-// export const Gobal = React.createContext();
-
 function Navbar(props) {
   const [menubar, setMenubar] = useState(false);
 
@@ -30,8 +28,6 @@ function Navbar(props) {
 
   return (
     <>
-      {/* <Gobal.Provider value={{ handleOnSubmit }}> */}
-
       <div className="navbar">
         <Link to="#" className="menubar">
           <FaIcons.FaBars onClick={SidebarToggle} />
@@ -54,12 +50,9 @@ function Navbar(props) {
               <AiIcons.AiOutlineClose onClick={SidebarToggle} />
             </Link>
           </li>
-
           <SidebarData />
         </ul>
       </nav>
-
-      {/* </Gobal.Provider> */}
     </>
   );
 }
