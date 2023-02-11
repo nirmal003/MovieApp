@@ -3,11 +3,15 @@ import React, { createContext, useEffect, useState } from "react";
 export const WatchList = createContext();
 export const Cart = createContext();
 
-const watchListFromLocalStorage = JSON.parse(
-  localStorage.getItem("watchList") || []
-);
+// const watchListFromLocalStorage = JSON.parse(
+//   localStorage.getItem("watchList") || []
+// );
 
-const cartFromLocalStorage = JSON.parse(localStorage.getItem("cart") || []);
+const watchListFromLocalStorage = [];
+
+// const cartFromLocalStorage = JSON.parse(localStorage.getItem("cart") || []);
+
+const cartFromLocalStorage = [];
 
 function Context({ children }) {
   //  gobal state created here only
